@@ -1,7 +1,28 @@
-<h2>{{ projectName }} Project Loaded!</h2>
-<br />
-<a routerLink="/feature" class="btn btn-default">Navigate to application "feature"</a>
-<br />
-<br />
-<br />
-You can get my <a href="https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets" target="_blank">Angular snippets</a> for the VS Code editor <a href="https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets" target="_blank">here</a>.
+<div *ngIf="showRequiredReg">
+    <div class="error">There was an error when trying to register.</div>
+    <button class="btn btn-primary">Register</button>
+</div>
+
+<div class="encrypt" *ngIf="!showRequiredReg">
+    <label>
+        Enter a value to encrypt:
+    </label>
+    <input class="encrypt-input" type="text" [(ngModel)]="stringToEncrypt">
+    <button class="btn btn-primary" (click)="encryptString()">Encrypt</button>
+    <div *ngIf="encryptedString">
+        <p>Your Encrypted result:  {{encryptedString}}</p>
+    </div>
+</div>
+
+<div *ngIf="encryptedString && !showRequiredReg">
+    <label>
+        Enter a value to decrypt:
+    </label>
+    <br>
+    <input class="decrypt-input" type="text" [(ngModel)]="stringToDecrypt">
+    <br>
+    <button class="btn btn-primary" (click)="decryptString()">Decrypt</button>
+    <div *ngIf="decryptedString">
+        <p>Your Decrypted result:  {{decryptedString}}</p>
+    </div>
+</div>

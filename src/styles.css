@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+.decrypt-input {
+    width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.encrypt-input {
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.encrypt {
+    margin-top: 50px;
+}
+
+.decrypt {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
