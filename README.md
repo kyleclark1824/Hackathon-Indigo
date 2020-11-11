@@ -6,8 +6,8 @@ to get acquainted with Ionic.
 
 
 # Before running the application
- - Running the app isn't essential for the purpose of the project. But to do so you will need a valid user on the 
-   Deveng AR DEV teant. Reach out to Kyle Clark if you need a user created.
+Running the app isn't essential for the purpose of the project. But to do so you will need a valid user on the 
+Deveng AR DEV teant. Reach out to Kyle Clark if you need a user created.
 
 # Running the Application
 
